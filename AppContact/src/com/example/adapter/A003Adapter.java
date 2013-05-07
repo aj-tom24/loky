@@ -1,0 +1,84 @@
+package com.example.adapter;
+
+import java.util.List;
+
+import android.content.Context;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.appcontact.R;
+import com.example.model.ContactModel;
+
+public class A003Adapter extends ArrayAdapter<ContactModel>{
+
+	private LayoutInflater inflater;
+	private List<ContactModel> mArr;
+	private int layout;
+	
+	public A003Adapter(Context context, int textViewResourceId,
+			List<ContactModel> objects) {
+		super(context, textViewResourceId, objects);
+		// TODO Auto-generated constructor stub
+		
+		this.layout = textViewResourceId;
+		this.mArr = objects;
+		this.inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+	}
+
+	@Override
+	public View getView(int position, View convertView, ViewGroup parent) {
+		// TODO Auto-generated method stub
+		return getViewPanel(position, convertView);
+	}
+	
+	@Override
+	public ContactModel getItem(int position) {
+		// TODO Auto-generated method stub
+		return super.getItem(position);
+	}
+	
+	@Override
+	public int getCount() {
+		// TODO Auto-generated method stub
+		return super.getCount();
+	}
+	
+	class ViewHolder
+    {
+    	ImageView img;
+    	TextView text;
+    }
+	
+	private View getViewPanel(int position, View convertView)
+	{
+		View view = convertView;
+        ViewHolder mHolder = null;
+        
+        if (view == null) {
+            // ??????????????????????????????????????????????????????????????????r???????????????????????????[??????????????????null????????????????????????V?????????????????????????????????????????????r???????????????????????????[??????????????????????????????
+            view = inflater.inflate(layout, null);
+            mHolder = new ViewHolder();
+            
+            mHolder.img = (ImageView)view.findViewById(R.id.item_a003_iv_img);
+            mHolder.text = (TextView)view.findViewById(R.id.item_a003_tv_text);
+            
+            view.setTag(mHolder);
+        }
+        else
+        {
+        	mHolder = (ViewHolder) view.getTag();
+        }
+        
+        
+        if(mArr.size() > 0)
+        {
+        	mHolder.text.setText(mArr.get(position).getName());
+        }
+
+        return view;
+	}
+}

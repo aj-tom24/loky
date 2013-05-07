@@ -1,0 +1,78 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="fill">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="wrap">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="match">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="width_fill">
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="height_fill">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">fill_parent</item>
+    </style>
+    
+    <style name="layout_base" parent="fill">
+		<item name="android:layout_margin">0dp</item>
+    </style>
+    
+    <style name="layout_blue" parent="layout_base">
+        <item name="android:background">@color/LightSkyBlue</item>
+    </style>
+    
+    <style name="textview_base" parent="width_fill">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="textview_larger" parent="textview_base">
+		<item name="android:textSize">@dimen/textview_large</item>
+    </style>
+    
+    <style name="textview_normal" parent="textview_base">
+		<item name="android:textSize">@dimen/textview_normal</item>
+    </style>
+    
+    <style name="textview_small" parent="textview_base">
+		<item name="android:textSize">@dimen/textview_small</item>
+    </style>
+    
+    <!-- EditText -->
+    <style name="edittext_base" parent="width_fill">
+        <item name="android:singleLine">true</item>
+		<item name="android:textSize">@dimen/textview_normal</item>
+    </style>
+    <!-- Button -->
+    <style name="button_base" parent="wrap">
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/white</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/textview_normal</item>
+    </style>
+</resources>

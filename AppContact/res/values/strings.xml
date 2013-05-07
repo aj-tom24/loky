@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AppContact</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="newuser">New User</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="email">Email</string>
+    <string name="confirmemail">Confirm email</string>
+    <string name="gender">Gender</string>
+    <string name="birthday">Birthday</string>
+    <string name="registry">Registry</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="loginFB">Login with Facebook</string>
+    <string name="loginBuchMeO">Login BuchMeO</string>
+    <string name="loginGmail">Login witch Gmail</string>
+    <string name="contaclist">Contact list</string>
+    <string name="devicecontacts">Device contacts</string>
+    <string name="BuchMeOcontacts">BuchMeO contacts</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="msg_logged">You logged on other device, do you want to commit device information</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+</resources>

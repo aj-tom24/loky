@@ -1,0 +1,22 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/layout_base"
+    android:gravity="center"
+    android:orientation="horizontal">
+    
+    <TextView 
+        android:id="@+id/item_a003_tv_text"
+        style="@style/wrap"
+        android:text="@string/msg_logged"
+        android:singleLine="false"
+        android:layout_weight="1"
+        />
+    
+    <ImageView 
+        android:id="@+id/item_a003_iv_img"
+        style="@style/wrap"
+        android:src="@drawable/ic_launcher"
+        
+        />
+</LinearLayout>
